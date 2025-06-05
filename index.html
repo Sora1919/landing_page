@@ -4,17 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <style>
-        
     
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        *
+        {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        
+        
+
+        /* container_1 start */
+
+        #container_1
+        { 
+            width: 100vw;
+            height: 500px;
+            background-color: #1F2937;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #container_1 .hero_box
+        {
+            width: 1130px;
+            display: flex;
+            padding: 15px;
+            justify-content: space-between;
+        }
+
+        
+
+        #container_1 .hero_box .logo_box .logo
+        {
+            font-size: 24px;
+            color: #F9FAF8;
+        }
+
+        #container_1 .hero_box .link_box
+        {
+            display: flex;
+            gap: 20px;
+        }
+
+        #container_1 .hero_box .links
+        {
+            font-size: 18px;
+            color: #E5E7EB;
+        }
+
+        #container_1 .context_box_1
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container_1 .context_1
+        {
+            width: 450px;
+            height: 250px;
+            border: 1px solid #3882F6;
+        }
+
+        #container_1 .context_box_1
+        {
+            margin: 80px;
+            width: 1100px;
+            justify-content: center;
+        }
+
+        
+
+        #container_1 .context_box_1 .context_1 .title .context_span
+        {
+            font-size: 48px;
+            color: #F9FAF8;
+            font-weight: 900;
+        }
+
+        #container_1 .context_box_1 .context_1 .para .context_para
+        {
+            font-size: 18px;
+            color: #E5E7EB;
+        }
+        
+        #container_1 .context_box_1 .context_1 .button .sign_up
+        {
+            background-color: #3882F6;
+            font-size: 15px;
+            color: #E5E7EB;
+            margin-top: 10px;
+            width: 150px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+
+
+
+
+        /* containr_2 start */
         #container_2
         {
+            width: 100vw;
             height: 400px;
             display: flex;
             flex-direction: column;
@@ -25,6 +123,9 @@
         #container_2 .h_ctn2
         {
             margin-bottom: 50px;
+            font-size: 36px;
+            color: #1F2937;
+            font-weight: 900;
         }
 
         #container_2 .context_2
@@ -56,6 +157,46 @@
 <body>
 
 
+
+        <div id="container_1">
+            <div class="hero_box">
+                <div class="logo_box">
+                    <div class="logo">Header Logo</div>
+                </div>
+                
+                <div class="link_box">
+                    <div class="links">header link one</div>
+                    <div class="links">header link two</div>
+                    <div class="links">header link three</div>
+                </div>
+                
+            </div>
+
+            <div class="context_box_1">
+                <div class="context_1">
+                    <div class="title">
+                        <span class="context_span">This website is awesome</span>
+                    </div>
+                    <div class="para">
+                        <p class="context_para">This website has some subtext that goes here under the main title. It's a smaller font and the color of lower contrast</p>
+                    </div>
+                    <div class="button">
+                        <button class="sign_up">Sign up</button>
+                    </div>
+                </div>
+                <div class="context_1"></div>
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+    </div>
+
+
+    <!-- Section-2 stard here -->
     <div id="container_2">
         <h2 class="h_ctn2">Some Random Information</h2>
         <div class="context_2">
@@ -82,31 +223,9 @@
         
         
     </div>
-    <div id="container_2">
-        <h2 class="h_ctn2">Some Random Information</h2>
-        <div class="context_2">
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
-            </div>
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
-            </div>
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
-            </div>
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
-            </div>
-        </div>
-        
-        
-        
-        
-        
-    </div>
+    <!-- section-2 end here -->
+
+
+
 </body>
 </html>
