@@ -21,18 +21,22 @@
 
         /* container_1 start */
 
-        #container_1
+        #container_1,#container_2,#container_3,#container_4
         { 
             width: 100vw;
-            height: 500px;
-            background-color: #1F2937;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
+        #container_1
+        {
+            height: 500px;
+            background-color: #1F2937;
+        }
         #container_1 .hero_box
         {
-            width: 1130px;
+            width: 1050px;
             display: flex;
             padding: 15px;
             justify-content: space-between;
@@ -60,63 +64,65 @@
 
         #container_1 .context_box_1
         {
+            margin: 80px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 30px;
         }
 
-        #container_1 .context_1
+
+        #container_1 .context_box_1 .context_1_info, #container_1 .context_box_1 .context_1_img
         {
-            width: 450px;
+            width: 500px;
             height: 250px;
-            border: 1px solid #3882F6;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
-        #container_1 .context_box_1
-        {
-            margin: 80px;
-            width: 1100px;
-            justify-content: center;
-        }
-
-        
-
-        #container_1 .context_box_1 .context_1 .title .context_span
+        #container_1 .context_box_1 .context_1_info .title .context_span
         {
             font-size: 48px;
             color: #F9FAF8;
             font-weight: 900;
         }
 
-        #container_1 .context_box_1 .context_1 .para .context_para
+        #container_1 .context_box_1 .context_1_info .para .context_para
         {
             font-size: 18px;
             color: #E5E7EB;
         }
         
-        #container_1 .context_box_1 .context_1 .button .sign_up
+        #container_1 .context_box_1 .context_1_info .button .sign_up
         {
             background-color: #3882F6;
             font-size: 15px;
             color: #E5E7EB;
+            border: none;
             margin-top: 10px;
             width: 150px;
             padding: 10px;
-            border-radius: 15px;
+            border-radius: 10px;
         }
 
+        #container_1 .context_box_1 .context_1_info .button .sign_up:hover
+        {
+            cursor: pointer;
+        }
 
-
-
+        #container_1 .context_box_1 .context_1_img
+        {
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            background-color: #919191;
+            color: #E5E7EB;
+        }
 
         /* containr_2 start */
-        #container_2
+        #container_2, #container_3
         {
-            width: 100vw;
             height: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
         }
 
@@ -152,12 +158,114 @@
         {
             width: 150px;
         }
+
+        /* container 3 start here */
+
+        #container_3
+        {
+            background-color: #E5E7EB;
+            justify-content: center;
+        }
+
+        #container_3 .context_box_3
+        {
+            width: 700px;
+        }
+
+        #container_3 .context_box_3 .context_3
+        {
+            color: #1F2937;
+            font-style: italic;
+            font-size: 36px;
+            font-weight:lighter
+        }
+
+        #container_3 .context_box_3 .context_3_lu
+        {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* container 4 start here */
+        #container_4
+        {
+            height: 400px;
+        }
+
+        #container_4 .context_box_4
+        {
+            background-color: #3882F6;
+            width: 900px;
+            margin-top: 110px;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #container_4 .context_box_4 .context_4_info
+        {
+            padding-left: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #container_4 .context_box_4 .context_4_info .title
+        {
+            font-weight: 500;
+            font-size: 20px;
+            color: #E5E7EB;
+        }
+
+        #container_4 .context_box_4 .context_4_info .para
+        {
+            color: #F9FAF8;
+            font-weight: 200;
+        }
+
+        #container_4 .context_box_4 .context_4_button
+        {
+            margin: auto 80px auto auto;
+        }
+
+        #container_4 .context_box_4 .context_4_button .sign_up
+        {
+            padding: 10px;
+            color: #E5E7EB;
+            font-weight: bold;
+            width: 100px;
+            border-radius: 10px;
+            background-color: #3882F6;
+            border: 2px solid #E5E7EB;
+        }
+
+        #container_4 .context_box_4 .context_4_button .sign_up:hover
+        {
+            cursor: pointer;
+        }
+
+
+        #container_4 .footer
+        {
+            position: fixed;
+            bottom: 0;
+            background-color: #1F2937;
+            color: #E5E7EB;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
     </style>
 </head>
 <body>
 
 
-
+        <!-- Section 1 start here -->
         <div id="container_1">
             <div class="hero_box">
                 <div class="logo_box">
@@ -173,7 +281,7 @@
             </div>
 
             <div class="context_box_1">
-                <div class="context_1">
+                <div class="context_1_info">
                     <div class="title">
                         <span class="context_span">This website is awesome</span>
                     </div>
@@ -184,48 +292,73 @@
                         <button class="sign_up">Sign up</button>
                     </div>
                 </div>
-                <div class="context_1"></div>
+                <div class="context_1_img">
+                    <div class="image_box">
+                        <span class="img_letter">this is a placeholder or an image</span>
+                    </div>
+                </div>
             </div>
             
         </div>
-        
-        
-        
-        
-        
-    </div>
+        <!-- Section 1 end here -->
+
+        <!-- Section-2 stard here -->
+        <div id="container_2">
+            <h2 class="h_ctn2">Some Random Information</h2>
+            <div class="context_2">
+                <div class="box">
+                    <div class="square"></div>
+                    <p class="box_p">this is some sub-text under an illustration or image</p>
+                </div>
+                <div class="box">
+                    <div class="square"></div>
+                    <p class="box_p">this is some sub-text under an illustration or image</p>
+                </div>
+                <div class="box">
+                    <div class="square"></div>
+                    <p class="box_p">this is some sub-text under an illustration or image</p>
+                </div>
+                <div class="box">
+                    <div class="square"></div>
+                    <p class="box_p">this is some sub-text under an illustration or image</p>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+        <!-- section-2 end here -->
 
 
-    <!-- Section-2 stard here -->
-    <div id="container_2">
-        <h2 class="h_ctn2">Some Random Information</h2>
-        <div class="context_2">
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
-            </div>
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
-            </div>
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
-            </div>
-            <div class="box">
-                <div class="square"></div>
-                <p class="box_p">this is some sub-text under an illustration or image</p>
+        <!-- Section 3 start here -->
+        <div id="container_3">
+            <div class="context_box_3">
+                <div class="context_3">
+                    <p class="context_3_par">This is inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+                </div>
+                <span class="context_3_lu">-Thor, God of Thunder</span>
             </div>
         </div>
-        
-        
-        
-        
-        
-    </div>
-    <!-- section-2 end here -->
+        <!-- Setction 3 end here -->
 
-
+        <!-- Section 4 start here -->
+         <div id="container_4">
+            <div class="context_box_4">
+                <div class="context_4_info">
+                    <span class="title">Call to action! It's time!</span>
+                    <p class="para">Sign up for our product by clicking that button right over there!</p>
+                </div>
+                <div class="context_4_button">
+                    <button class="sign_up">Sign up</button>
+                </div>
+            </div>
+            <div class="footer">
+                Copyright © The Odin Project 2021
+            </div>
+        </div>
+        <!-- Section 4 end here-->
 
 </body>
 </html>
